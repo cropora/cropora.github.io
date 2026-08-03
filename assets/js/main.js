@@ -452,3 +452,41 @@ const observer = new IntersectionObserver((entries) => {
 });
 
 revealElements.forEach(el=>observer.observe(el));
+
+
+/* ==========================================
+   Mobile Navigation
+========================================== */
+
+const menuBtn = document.getElementById("menuBtn");
+const navbar = document.getElementById("navbar");
+
+if (menuBtn && navbar) {
+
+    menuBtn.addEventListener("click", () => {
+
+        navbar.classList.toggle("active");
+
+        const icon = menuBtn.querySelector(".material-symbols-rounded");
+
+        if (navbar.classList.contains("active")) {
+            icon.textContent = "close";
+        } else {
+            icon.textContent = "menu";
+        }
+
+    });
+
+    document.querySelectorAll(".navbar a").forEach(link => {
+
+        link.addEventListener("click", () => {
+
+            navbar.classList.remove("active");
+
+            menuBtn.querySelector(".material-symbols-rounded").textContent = "menu";
+
+        });
+
+    });
+
+}
