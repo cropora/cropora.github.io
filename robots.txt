@@ -1,0 +1,10 @@
+# ==========================================
+# Cropora Robots File
+# https://cropora.app
+# ==========================================
+
+User-agent: *
+Allow: /
+
+# Update after publishing
+Sitemap: https://YOUR_USERNAME.github.io/cropora/sitemap.xml
