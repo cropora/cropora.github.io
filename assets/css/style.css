@@ -447,36 +447,93 @@ section[id],footer{
   .card-left{left:20px}
   .card-right{right:20px}
 }
+
 @media(max-width:768px){
-  .download-btn{display:none}
-  .menu-btn{display:block}
-  .navbar{
-    position:absolute;
-    top:80px;left:0;
-    width:100%;
-    background:#fff;
-    display:none;
-    flex-direction:column;
-    gap:22px;
-    padding:28px;
-    box-shadow:var(--shadow);
-  }
-  .navbar.active{display:flex}
-  .hero h1{font-size:2.5rem}
-  .phone{width:260px}
-  .floating-card{
-    position:static;
-    width:100%;
-    margin:15px auto;
-    transform:none !important;
-  }
-  .hero-right{
-    min-height:auto;
-    display:flex;
-    flex-direction:column;
-    gap:18px;
-  }
+
+    .download-btn{
+        display:none;
+    }
+
+    .menu-btn{
+        display:block;
+    }
+
+    .navbar{
+        position:absolute;
+        top:80px;
+        left:0;
+        width:100%;
+        background:#fff;
+        display:none;
+        flex-direction:column;
+        gap:22px;
+        padding:28px;
+        box-shadow:var(--shadow);
+    }
+
+    .navbar.active{
+        display:flex;
+    }
+
+    .hero{
+        padding-top:120px;
+    }
+
+    .hero-grid{
+        display:flex;
+        flex-direction:column;
+        gap:45px;
+    }
+
+    .hero-left{
+        text-align:center;
+        padding:0 10px;
+    }
+
+    .hero h1{
+        font-size:2rem;
+        line-height:1.25;
+    }
+
+    .hero p{
+        max-width:100%;
+        font-size:1rem;
+    }
+
+    .hero-buttons{
+        flex-direction:column;
+        gap:15px;
+    }
+
+    .btn{
+        width:100%;
+    }
+
+    .hero-right{
+        min-height:auto;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+    }
+
+    .phone{
+        width:240px;
+        height:490px;
+    }
+
+    .floating-card{
+        display:none;
+    }
+
+    .hero-highlights{
+        justify-content:center;
+        flex-wrap:wrap;
+        gap:18px;
+    }
+
 }
+
+
 @media(max-width:480px){
   .hero{padding-top:120px}
   .hero h1{font-size:2rem}
